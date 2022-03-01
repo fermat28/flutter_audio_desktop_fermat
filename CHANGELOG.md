@@ -1,3 +1,6 @@
+## 0.1.2
+
+- Now it supports ound Nullsafety
 ## 0.1.0
 
 - Now you can listen to playback events using `stream` (a broadcast stream) inside `AudioPlayer`. This was a great problem in earlier version as one always needs to trigger UI updates whenever playback progresses, ends etc.

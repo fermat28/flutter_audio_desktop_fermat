@@ -1,0 +1,28 @@
+# ninja log v5
+0	58754	0	/home/fermat/Documents/Flutter projects/flutter_audio_desktop/linux/flutter/ephemeral/libflutter_linux_gtk.so	b9e10cf3aa9f90dd
+0	58754	0	/home/fermat/Documents/Flutter projects/flutter_audio_desktop/linux/flutter/ephemeral/flutter_linux/fl_basic_message_channel.h	b9e10cf3aa9f90dd
+0	58754	0	/home/fermat/Documents/Flutter projects/flutter_audio_desktop/linux/flutter/ephemeral/flutter_linux/fl_binary_codec.h	b9e10cf3aa9f90dd
+0	58754	0	/home/fermat/Documents/Flutter projects/flutter_audio_desktop/linux/flutter/ephemeral/flutter_linux/fl_binary_messenger.h	b9e10cf3aa9f90dd
+0	58754	0	/home/fermat/Documents/Flutter projects/flutter_audio_desktop/linux/flutter/ephemeral/flutter_linux/fl_dart_project.h	b9e10cf3aa9f90dd
+0	58754	0	/home/fermat/Documents/Flutter projects/flutter_audio_desktop/linux/flutter/ephemeral/flutter_linux/fl_engine.h	b9e10cf3aa9f90dd
+0	58754	0	/home/fermat/Documents/Flutter projects/flutter_audio_desktop/linux/flutter/ephemeral/flutter_linux/fl_json_message_codec.h	b9e10cf3aa9f90dd
+0	58754	0	/home/fermat/Documents/Flutter projects/flutter_audio_desktop/linux/flutter/ephemeral/flutter_linux/fl_json_method_codec.h	b9e10cf3aa9f90dd
+0	58754	0	/home/fermat/Documents/Flutter projects/flutter_audio_desktop/linux/flutter/ephemeral/flutter_linux/fl_message_codec.h	b9e10cf3aa9f90dd
+0	58754	0	/home/fermat/Documents/Flutter projects/flutter_audio_desktop/linux/flutter/ephemeral/flutter_linux/fl_method_call.h	b9e10cf3aa9f90dd
+0	58754	0	/home/fermat/Documents/Flutter projects/flutter_audio_desktop/linux/flutter/ephemeral/flutter_linux/fl_method_channel.h	b9e10cf3aa9f90dd
+0	58754	0	/home/fermat/Documents/Flutter projects/flutter_audio_desktop/linux/flutter/ephemeral/flutter_linux/fl_method_codec.h	b9e10cf3aa9f90dd
+0	58754	0	/home/fermat/Documents/Flutter projects/flutter_audio_desktop/linux/flutter/ephemeral/flutter_linux/fl_method_response.h	b9e10cf3aa9f90dd
+0	58754	0	/home/fermat/Documents/Flutter projects/flutter_audio_desktop/linux/flutter/ephemeral/flutter_linux/fl_plugin_registrar.h	b9e10cf3aa9f90dd
+0	58754	0	/home/fermat/Documents/Flutter projects/flutter_audio_desktop/linux/flutter/ephemeral/flutter_linux/fl_plugin_registry.h	b9e10cf3aa9f90dd
+0	58754	0	/home/fermat/Documents/Flutter projects/flutter_audio_desktop/linux/flutter/ephemeral/flutter_linux/fl_standard_message_codec.h	b9e10cf3aa9f90dd
+0	58754	0	/home/fermat/Documents/Flutter projects/flutter_audio_desktop/linux/flutter/ephemeral/flutter_linux/fl_standard_method_codec.h	b9e10cf3aa9f90dd
+0	58754	0	/home/fermat/Documents/Flutter projects/flutter_audio_desktop/linux/flutter/ephemeral/flutter_linux/fl_string_codec.h	b9e10cf3aa9f90dd
+0	58754	0	/home/fermat/Documents/Flutter projects/flutter_audio_desktop/linux/flutter/ephemeral/flutter_linux/fl_value.h	b9e10cf3aa9f90dd
+0	58754	0	/home/fermat/Documents/Flutter projects/flutter_audio_desktop/linux/flutter/ephemeral/flutter_linux/fl_view.h	b9e10cf3aa9f90dd
+0	58754	0	/home/fermat/Documents/Flutter projects/flutter_audio_desktop/linux/flutter/ephemeral/flutter_linux/flutter_linux.h	b9e10cf3aa9f90dd
+0	58754	0	flutter/_phony_	b9e10cf3aa9f90dd
+58755	62886	1646340714853562408	CMakeFiles/flutter_audio_desktop.dir/main.cc.o	f1ddc97c1353cf77
+58759	62913	1646340714833562257	CMakeFiles/flutter_audio_desktop.dir/flutter/generated_plugin_registrant.cc.o	f65392b46489d5d9
+58756	63253	1646340715233565280	CMakeFiles/flutter_audio_desktop.dir/my_application.cc.o	633f8f6f6218277
+63253	63668	1646340715657568491	intermediates_do_not_run/flutter_audio_desktop	32a52add035eee9e
+63668	64179	0	CMakeFiles/install.util	93ab0a72bd8b5fe6

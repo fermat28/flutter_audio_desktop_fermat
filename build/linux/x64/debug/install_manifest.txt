@@ -1,0 +1,8 @@
+/home/fermat/Documents/Flutter projects/flutter_audio_desktop/build/linux/x64/debug/bundle/flutter_audio_desktop
+/home/fermat/Documents/Flutter projects/flutter_audio_desktop/build/linux/x64/debug/bundle/data/icudtl.dat
+/home/fermat/Documents/Flutter projects/flutter_audio_desktop/build/linux/x64/debug/bundle/lib/libflutter_linux_gtk.so
+/home/fermat/Documents/Flutter projects/flutter_audio_desktop/build/linux/x64/debug/bundle/data/flutter_assets/version.json
+/home/fermat/Documents/Flutter projects/flutter_audio_desktop/build/linux/x64/debug/bundle/data/flutter_assets/kernel_blob.bin
+/home/fermat/Documents/Flutter projects/flutter_audio_desktop/build/linux/x64/debug/bundle/data/flutter_assets/NOTICES.Z
+/home/fermat/Documents/Flutter projects/flutter_audio_desktop/build/linux/x64/debug/bundle/data/flutter_assets/AssetManifest.json
+/home/fermat/Documents/Flutter projects/flutter_audio_desktop/build/linux/x64/debug/bundle/data/flutter_assets/FontManifest.json

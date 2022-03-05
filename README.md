@@ -43,7 +43,7 @@ audioPlayer.load(
 );
 
 
-See [this](https://github.com/fermat28/flutter_audio_desktop/blob/master/example/lib/main.dart) example for a better overview.
+See [this](https://github.com/fermat28/flutter_audio_desktop/example/lib/main.dart) example for a better overview.
 
 #### Windows
 

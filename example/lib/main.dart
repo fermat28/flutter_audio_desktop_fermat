@@ -3,15 +3,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_audio_desktop/flutter_audio_desktop.dart';
 
 class Player extends StatefulWidget {
-  Player({Key key}) : super(key: key);
+  Player({Key? key}) : super(key: key);
   PlayerState createState() => PlayerState();
 }
 
 class PlayerState extends State<Player> {
-  AudioDevice defaultDevice;
-  List<AudioDevice> allDevices;
-  AudioPlayer audioPlayer;
-  File file;
+  AudioDevice? defaultDevice;
+  List<AudioDevice>? allDevices;
+  AudioPlayer? audioPlayer;
+  File? file;
   bool isPlaying = false;
   bool isStopped = true;
   bool isCompleted = false;
@@ -27,15 +27,15 @@ class PlayerState extends State<Player> {
     // You can change playback device by providing device.
     this.audioPlayer = new AudioPlayer(id: 0)
       // Listen to AudioPlayer events.
-      ..stream.listen(
+      ..stream!.listen(
         (Audio audio) {
           this.setState(() {
             this.file = audio.file;
-            this.isPlaying = audio.isPlaying;
-            this.isStopped = audio.isStopped;
-            this.isCompleted = audio.isCompleted;
-            this.position = audio.position;
-            this.duration = audio.duration;
+            this.isPlaying = audio.isPlaying!;
+            this.isStopped = audio.isStopped!;
+            this.isCompleted = audio.isCompleted!;
+            this.position = audio.position!;
+            this.duration = audio.duration!;
           });
         },
       );
@@ -48,12 +48,12 @@ class PlayerState extends State<Player> {
   // Get AudioPlayer events without stream.
   void updatePlaybackState() {
     this.setState(() {
-      this.file = this.audioPlayer.audio.file;
-      this.isPlaying = this.audioPlayer.audio.isPlaying;
-      this.isStopped = this.audioPlayer.audio.isStopped;
-      this.isCompleted = this.audioPlayer.audio.isCompleted;
-      this.position = this.audioPlayer.audio.position;
-      this.duration = this.audioPlayer.audio.duration;
+      this.file = this.audioPlayer!.audio!.file;
+      this.isPlaying = this.audioPlayer!.audio!.isPlaying!;
+      this.isStopped = this.audioPlayer!.audio!.isStopped!;
+      this.isCompleted = this.audioPlayer!.audio!.isCompleted!;
+      this.position = this.audioPlayer!.audio!.position!;
+      this.duration = this.audioPlayer!.audio!.duration!;
     });
   }
 
@@ -107,7 +107,7 @@ class PlayerState extends State<Player> {
                           color: Colors.blue,
                           onPressed: () async {
                             // Load AudioSource.
-                            await this.audioPlayer.load(
+                            await this.audioPlayer!.load(
                                   AudioSource.fromFile(
                                     new File(this.textController.text),
                                   ),
@@ -131,7 +131,7 @@ class PlayerState extends State<Player> {
                           onPressed: this.isStopped
                               ? null
                               : () async {
-                                  await this.audioPlayer.play();
+                                  await this.audioPlayer!.play();
                                   this.updatePlaybackState();
                                 },
                         ),
@@ -145,7 +145,7 @@ class PlayerState extends State<Player> {
                           onPressed: this.isStopped
                               ? null
                               : () async {
-                                  await this.audioPlayer.pause();
+                                  await this.audioPlayer!.pause();
                                   this.updatePlaybackState();
                                 },
                         ),
@@ -159,7 +159,7 @@ class PlayerState extends State<Player> {
                           onPressed: this.isStopped
                               ? null
                               : () async {
-                                  await this.audioPlayer.stop();
+                                  await this.audioPlayer!.stop();
                                   this.updatePlaybackState();
                                 },
                         ),
@@ -173,7 +173,7 @@ class PlayerState extends State<Player> {
                             : (double volume) async {
                                 this.volume = volume;
                                 // Change Volume.
-                                await this.audioPlayer.setVolume(this.volume);
+                                await this.audioPlayer!.setVolume(this.volume);
                                 this.updatePlaybackState();
                               },
                       ),
@@ -192,7 +192,7 @@ class PlayerState extends State<Player> {
                               ? null
                               : (double position) async {
                                   // Get or set playback position.
-                                  await this.audioPlayer.setPosition(
+                                  await this.audioPlayer!.setPosition(
                                         Duration(
                                             milliseconds: position.toInt()),
                                       );
@@ -323,10 +323,10 @@ class PlayerState extends State<Player> {
                       SubHeader('All Devices'),
                     ] +
                     ((this.allDevices != null)
-                        ? this.allDevices.map((AudioDevice device) {
+                        ? this.allDevices!.map((AudioDevice device) {
                             return ListTile(
-                              title: Text('${device?.name}'),
-                              subtitle: Text('${device?.id}'),
+                              title: Text('${device.name}'),
+                              subtitle: Text('${device.id}'),
                             );
                           }).toList()
                         : []),
@@ -353,7 +353,7 @@ void main() => runApp(MyApp());
 class SubHeader extends StatelessWidget {
   final String text;
 
-  const SubHeader(this.text, {Key key}) : super(key: key);
+  const SubHeader(this.text, {Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

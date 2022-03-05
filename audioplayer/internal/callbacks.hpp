@@ -2,7 +2,7 @@
 
 
 void dataCallbackStream(ma_device* pDevice, void* pOutput, const void* pInput, ma_uint32 frameCount) {
-    ma_data_source_read_pcm_frames((ma_data_source*)pDevice->pUserData, pOutput, frameCount, NULL, MA_TRUE);
+    ma_data_source_read_pcm_frames((ma_data_source*)pDevice->pUserData, pOutput, frameCount, NULL);
     (void)pInput;
 }
 

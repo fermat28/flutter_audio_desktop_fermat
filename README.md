@@ -19,7 +19,10 @@ Mention in your pubspec.yaml:
 ```yaml
 dependencies:
   ...
-  flutter_audio_desktop: ^0.1.2
+  flutter_audio_desktop:
+    git:
+      url: https://github.com/fermat28/flutter_audio_desktop_fermat.git
+      ref: master
 ```
 
 ## Using
@@ -38,29 +41,7 @@ audioPlayer.load(
     new File('/home/fermat/music.mp3'),
   ),
 );
-// Start playback.
-audioPlayer.play();
-// Get audio duration.
-audioPlayer.audio.duration;
-// Change playback volume.
-audioPlayer.setVolume(0.5);
-// Change playback position.
-audioPlayer.setPosition(Duration(seconds: 10));
-// Get playback position.
-audioPlayer.audio.position;
-Timer(Duration(seconds: 10), () {
-    // Pause playback.
-    audioPlayer.pause();
-}
-// Few other things.
-audioPlayer.audio.file;
-audioPlayer.audio.isPlaying;
-audioPlayer.audio.isCompleted;
-audioPlayer.audio.isStopped;
 
-```
-
-Other classes & methods are documented in their docstrings very well.
 
 See [this](https://github.com/fermat28/flutter_audio_desktop/blob/master/example/lib/main.dart) example for a better overview.
 

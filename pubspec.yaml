@@ -1,4 +1,4 @@
-name: flutter_audio_desktop
+name: flutter_audio_desktop_fermat
 description: An audio playback library for Flutter Desktop. Supports Windows & Linux. Based on miniaudio.
 version: 0.1.2
 homepage: https://github.com/fermat28/flutter_audio_desktop

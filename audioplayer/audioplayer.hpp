@@ -88,7 +88,7 @@ class AudioPlayer: protected AudioPlayerInternal {
         ma_resource_manager_data_source_init(
             &this->resourceManager,
             filePath.c_str(),
-            MA_DATA_SOURCE_FLAG_STREAM,
+            MA_SOUND_FLAG_STREAM,
             NULL,
             &this->dataSource
         );
